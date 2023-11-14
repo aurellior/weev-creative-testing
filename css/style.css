@@ -1,0 +1,11 @@
+nav {
+  transition: all 0.3s ease;
+}
+
+.scrolling-active {
+  background-color: #272727;
+  transition: all 0.3s ease;
+  z-index: 50;
+  position: fixed;
+  color: white;
+}
