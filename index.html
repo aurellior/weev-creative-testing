@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="font-[Poppins] bg-[#272727] h-screen">
+    <!-- Navbar -->
+    <header class="bg-transparent">
+      <nav
+        class="flex items-center w-full px-[60px] justify-between fixed z-50"
+      >
+        <div>
+          <img class="w-16 cursor-pointer" src="logo.png" alt="Weev Logo" />
+        </div>
+        <div class="flex items-center gap-6">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+        <div
+          class="nav-links duration-500 md:static absolute bg-transparent md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
+          >
+            <li>
+              <a
+                class="text-[#DCAD22] hover:text-[#DCAD22] text-[18px]"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-[#DCAD22] text-[18px]"
+                href="#about-us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-[#DCAD22] text-[18px]"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-[#DCAD22] text-[18px]"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-[#DCAD22] text-[18px]"
+                href="#contact-us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cover -->
+    <div
+      class="flex absolute z-30 text-left w-full text-white text-[20px] md:text-[64px] font-semibold font-Poppins h-screen items-end px-[60px] pb-[150px]"
+    >
+      <h1 class="pr-[300px]">
+        We Provide Human Resource For Your Event With High Value Quality and
+        Creativity.
+      </h1>
+    </div>
+
+    <div
+      class="bg-cover bg-center h-screen relative brightness-50"
+      style="background-image: url('assets/KZR05799.jpg')"
+    ></div>
+
+    <!-- Text -->
+    <div
+      class="w-full h-[250px] flex justify-center flex-col mt-[50px] md:mt-[10px]"
+    >
+      <h2 class="text-white text-[32px] font-semibold items-center text-center">
+        Maintain the image of the company and build good relationships
+      </h2>
+      <h2 class="text-white text-[32px] font-semibold items-center text-center">
+        with partners
+      </h2>
+    </div>
+
+    <!-- About Us & Services -->
+    <div class="bg-white w-full rounded-t-lg p-[80px]">
+      <!-- About Us -->
+      <div id="about-us">
+        <h1 class="text-black font-semibold text-[32px]">About Us</h1>
+        <div class="flex flex-row mt-[24px] items-center">
+          <div
+            class="bg-cover bg-center rounded-lg h-[310px] w-[490px]"
+            style="background-image: url('assets/weev-logo.png')"
+          ></div>
+          <div class="px-[36px]">
+            <div>
+              <h2 class="text-[32px]">Vision</h2>
+              <h3 class="text-[20px]">
+                Work innovatively and creatively as well as in line with the
+                purpose of partner activities.
+              </h3>
+            </div>
+            <div class="my-[24px]">
+              <h2 class="text-[32px]">Mission</h2>
+              <h3 class="text-[20px]">
+                Maintenance of activity concepts with innovative and creative
+                ideas in the modern industrial era
+              </h3>
+            </div>
+            <a href="about-us.html">
+              <button
+                class="text-[#E68D15] px-[24px] text-[14px] py-[8px] outline rounded-lg flex items-center"
+              >
+                See More
+                <svg
+                  class="ml-[8px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="11"
+                  viewBox="0 0 14 11"
+                  fill="none"
+                >
+                  <path
+                    d="M9 10.9399V6.93994H0.079999L0.0499992 4.92994H9V0.939941L14 5.93994L9 10.9399Z"
+                    fill="#E68D15"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Services -->
+      <div class="pt-[80px]" id="services">
+        <h1 class="text-black font-semibold text-[32px]">Our Services</h1>
+        <div class="flex flex-col gap-4">
+          <div class="flex justify-between">
+            <!-- 1 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">01</h1>
+              <h1 class="text-black text-[24px] font-medium my-[12px]">
+                Brand Activation
+              </h1>
+              <div class="flex flex-col gap-2 text-black text-[16px] text-left">
+                <p class="">
+                  We provide Digital Marketing for your brand. In the era of
+                  digital, Brand Activation is important to sell value of your
+                  brand through media.
+                </p>
+                <p>
+                  Design, Video Editing, Campaign, Copywriting, we providing
+                  almost everything for boosting your brand value through
+                  digital media
+                </p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl mx-[18px]"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">02</h1>
+              <h1 class="text-black text-[24px] font-medium my-[12px]">
+                Digital Poster
+              </h1>
+              <h1 class="text-black text-[16px] text-left">
+                We can create digital posters for events, incorporating
+                creativity and innovation tailored to our clients' needs. We
+                have successfully handled various clients with different
+                requirements and executed their projects effectively.
+              </h1>
+            </div>
+
+            <!-- 3 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">03</h1>
+              <h1 class="text-black text-[16px] font-medium my-[12px]">
+                Social Media Branding
+              </h1>
+              <h1 class="text-black text-[20px] text-left">
+                We can bring ideas and creativity to life by developing the best
+                branding. This will enhance our clients' products on social
+                media and attract a wider audience.
+              </h1>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <!-- 4 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">04</h1>
+              <h1 class="text-black text-[24px] font-medium my-[12px]">
+                Video Social Media Branding
+              </h1>
+              <h1 class="text-black text-[16px] text-left">
+                We will also ensure that our clients' activities are effectively
+                captured through photos and videos. With our team’s professional
+                qualifications in their respective fields, we are committed to
+                delivering the best results.
+              </h1>
+            </div>
+
+            <!-- 5 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl mx-[18px]"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">05</h1>
+              <h1 class="text-black text-[24px] font-medium my-[12px]">
+                Travel Content
+              </h1>
+              <div class="flex flex-col gap-2 text-black text-[16px] text-left">
+                <p class="">
+                  Around our media and production, we provide travel content
+                  with well prepared concept as requested.
+                </p>
+                <p>
+                  We will also ensure that our clients' activities are
+                  effectively captured through photos and videos. With our
+                  team’s professional qualifications in their respective fields,
+                  we are committed to delivering the best results.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div
+              class="md:w-1/3 border-b-[3px] border-[#E68D15] rounded bg-white px-[36px] pt-[24px] pb-[80px] shadow-xl"
+            >
+              <h1 class="text-[#F5C026] text-[48px] font-semibold">06</h1>
+              <h1 class="text-black text-[24px] font-medium my-[12px]">
+                Documentation Event
+              </h1>
+              <h1 class="text-black text-[16px] text-left">
+                Berbagai event akan dapat kami abadikan dengan tim yang sudah
+                profesional pada bidangnya. Sebuah kegiatan menjadi sebuah
+                keharusan untuk mendapatkan moment terbaik untuk tersimpan pada
+                sebuah foto ataupun video. Kami akan membuat moment tersebut
+                menjadi indah dan selalu terkenang dengan indah.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="w-full h-[1500px] px-[80px] pt-[80px]" id="projects">
+      <div class="flex items-center justify-between">
+        <h1 class="text-white font-semibold text-[32px]">Our Projects</h1>
+        <a href="projects.html">
+          <h1 class="text-white">See More</h1>
+        </a>
+      </div>
+      <div class="flex flex-row mt-[40px]">
+        <div class="w-1/2 mr-[20px]">
+          <div
+            class="bg-cover bg-center rounded-lg h-[500px] mr-[20px] mb-[24px]"
+            style="background-image: url('assets/welcoming-party.png')"
+          >
+            <div
+              class="bg-black/60 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-100 rounded-lg"
+            >
+              <p
+                class="text-white font-semibold text-[24px] px-[24px] text-center"
+              >
+                This digital poster was designed to welcome new students by
+                depicting the spirit of togetherness and enthusiasm to be part
+                of the campus community. Featuring silhouette visuals of
+                students, the poster highlights important information such as
+                the date, time, location, and agenda of the Welcoming Party. The
+                poster invites new students to participate and feel the positive
+                energy in starting their journey on campus.
+              </p>
+            </div>
+          </div>
+          <h1 class="text-white font-semibold text-[28px]">Welcoming Party</h1>
+        </div>
+        <div class="w-1/2">
+          <div
+            class="bg-cover bg-center rounded-lg h-[500px] mb-[24px]"
+            style="background-image: url('assets/goosebumps.jpg')"
+          >
+            <div
+              class="bg-black/60 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-100 rounded-lg"
+            >
+              <p
+                class="text-white font-semibold text-[24px] px-[24px] text-center"
+              >
+                This design is designed for the social media branding of “The
+                Goosebumps”, a clothing brand with a bold and edgy streetwear
+                identity.
+              </p>
+            </div>
+          </div>
+          <h1 class="text-white font-semibold text-[28px]">
+            Social branding (the goosebumps)
+          </h1>
+        </div>
+      </div>
+      <div class="flex flex-row mt-[40px]">
+        <div class="w-1/2 mr-[20px]">
+          <div
+            class="bg-cover bg-center rounded-lg h-[500px] mr-[20px] mb-[24px]"
+            style="background-image: url('assets/wedding.jpg')"
+          >
+            <div
+              class="bg-black/60 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-100 rounded-lg"
+            >
+              <p
+                class="text-white font-semibold text-[28px] px-[24px] text-center"
+              >
+                wedding
+              </p>
+            </div>
+          </div>
+          <h1 class="text-white font-semibold text-[28px]">Wedding</h1>
+        </div>
+        <div class="w-1/2">
+          <div
+            class="bg-cover bg-center rounded-lg h-[500px] mb-[24px]"
+            style="
+              background-image: url('assets/smks-setia-negara-depok-bromo.jpg');
+            "
+          >
+            <div
+              class="bg-black/60 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-100 rounded-lg"
+            >
+              <p
+                class="text-white font-semibold text-[28px] px-[24px] text-center"
+              >
+                SMKS Setia Negara Depok Goes To Bromo
+              </p>
+            </div>
+          </div>
+          <h1 class="text-white font-semibold text-[28px]">
+            SMKS Setia Negara Depok Goes To Bromo
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact us -->
+    <div class="flex bg-white py-[80px] justify-center" id="contact-us">
+      <div class="flex bg-[#272727] rounded-lg w-[1000px] justify-between">
+        <div class="text-white p-[40px] mt-[24px]">
+          <div>
+            <h1 class="text-white text-[32px] mb-[12px] font-semibold">
+              Contact Us
+            </h1>
+            <h2 class="text-[#AAADA9]">Contact us for more information</h2>
+          </div>
+          <div class="mt-[24px]">
+            <div class="flex mb-[24px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 10.99L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+                  fill="white"
+                />
+              </svg>
+              <h1 class="text-24px ml-[12px]">weevcreative@gmail.com</h1>
+            </div>
+
+            <div class="flex mb-[24px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12.04 2.00006C6.57999 2.00006 2.12999 6.45006 2.12999 11.9101C2.12999 13.6601 2.58999 15.3601 3.44999 16.8601L2.04999 22.0001L7.29999 20.6201C8.74999 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.95 17.3801 21.95 11.9201C21.95 9.27006 20.92 6.78006 19.05 4.91006C18.1332 3.98399 17.0412 3.24973 15.8376 2.75011C14.6341 2.25049 13.3431 1.99552 12.04 2.00006ZM12.05 3.67006C14.25 3.67006 16.31 4.53006 17.87 6.09006C18.6356 6.85541 19.2426 7.76438 19.6561 8.76482C20.0697 9.76526 20.2817 10.8375 20.28 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501C10.56 20.1501 9.10999 19.7601 7.84999 19.0001L7.54999 18.8301L4.42999 19.6501L5.25999 16.6101L5.05999 16.2901C4.23393 14.9787 3.797 13.4599 3.79999 11.9101C3.80999 7.37006 7.49999 3.67006 12.05 3.67006ZM8.52999 7.33006C8.36999 7.33006 8.09999 7.39006 7.86999 7.64006C7.64999 7.89006 6.99999 8.50006 6.99999 9.71006C6.99999 10.9301 7.88999 12.1001 7.99999 12.2701C8.13999 12.4401 9.75999 14.9401 12.25 16.0001C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.68 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.04 14.2701C16.97 14.1701 16.81 14.1101 16.56 14.0001C16.31 13.8601 15.09 13.2601 14.87 13.1801C14.64 13.1001 14.5 13.0601 14.31 13.3001C14.15 13.5501 13.67 14.1101 13.53 14.2701C13.38 14.4401 13.24 14.4601 13 14.3401C12.74 14.2101 11.94 13.9501 11 13.1101C10.26 12.4501 9.76999 11.6401 9.61999 11.3901C9.49999 11.1501 9.60999 11.0001 9.72999 10.8901C9.83999 10.7801 9.99999 10.6001 10.1 10.4501C10.23 10.3101 10.27 10.2001 10.35 10.0401C10.43 9.87006 10.39 9.73006 10.33 9.61006C10.27 9.50006 9.76999 8.26006 9.55999 7.77006C9.35999 7.29006 9.15999 7.35006 8.99999 7.34006C8.85999 7.34006 8.69999 7.33006 8.52999 7.33006Z"
+                  fill="white"
+                />
+              </svg>
+              <h1 class="text-24px ml-[12px]">082111205040</h1>
+            </div>
+
+            <div class="flex mb-[24px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_40_401)">
+                  <path
+                    d="M10 0C7.28625 0 6.945 0.0125 5.87875 0.06C4.8125 0.11 4.08625 0.2775 3.45 0.525C2.78262 0.776024 2.17811 1.16978 1.67875 1.67875C1.1701 2.17837 0.776384 2.7828 0.525 3.45C0.2775 4.085 0.10875 4.8125 0.06 5.875C0.0125 6.94375 0 7.28375 0 10.0013C0 12.7163 0.0125 13.0563 0.06 14.1225C0.11 15.1875 0.2775 15.9137 0.525 16.55C0.78125 17.2075 1.1225 17.765 1.67875 18.3212C2.23375 18.8775 2.79125 19.22 3.44875 19.475C4.08625 19.7225 4.81125 19.8912 5.87625 19.94C6.94375 19.9875 7.28375 20 10 20C12.7163 20 13.055 19.9875 14.1225 19.94C15.1863 19.89 15.915 19.7225 16.5513 19.475C17.2182 19.2239 17.8223 18.8301 18.3212 18.3212C18.8775 17.765 19.2188 17.2075 19.475 16.55C19.7213 15.9137 19.89 15.1875 19.94 14.1225C19.9875 13.0563 20 12.7163 20 10C20 7.28375 19.9875 6.94375 19.94 5.87625C19.89 4.8125 19.7213 4.085 19.475 3.45C19.2237 2.78278 18.8299 2.17834 18.3212 1.67875C17.822 1.16959 17.2175 0.775807 16.55 0.525C15.9125 0.2775 15.185 0.10875 14.1213 0.06C13.0538 0.0125 12.715 0 9.9975 0H10.0013H10ZM9.10375 1.8025H10.0013C12.6713 1.8025 12.9875 1.81125 14.0413 1.86C15.0162 1.90375 15.5462 2.0675 15.8988 2.20375C16.365 2.385 16.6987 2.6025 17.0487 2.9525C17.3988 3.3025 17.615 3.635 17.7963 4.1025C17.9338 4.45375 18.0963 4.98375 18.14 5.95875C18.1887 7.0125 18.1987 7.32875 18.1987 9.9975C18.1987 12.6663 18.1887 12.9837 18.14 14.0375C18.0963 15.0125 17.9325 15.5413 17.7963 15.8938C17.6359 16.3279 17.38 16.7205 17.0475 17.0425C16.6975 17.3925 16.365 17.6088 15.8975 17.79C15.5475 17.9275 15.0175 18.09 14.0413 18.135C12.9875 18.1825 12.6713 18.1938 10.0013 18.1938C7.33125 18.1938 7.01375 18.1825 5.96 18.135C4.985 18.09 4.45625 17.9275 4.10375 17.79C3.66937 17.6299 3.27641 17.3745 2.95375 17.0425C2.62094 16.72 2.36465 16.3271 2.20375 15.8925C2.0675 15.5412 1.90375 15.0113 1.86 14.0363C1.8125 12.9825 1.8025 12.6663 1.8025 9.995C1.8025 7.325 1.8125 7.01 1.86 5.95625C1.905 4.98125 2.0675 4.45125 2.205 4.09875C2.38625 3.6325 2.60375 3.29875 2.95375 2.94875C3.30375 2.59875 3.63625 2.3825 4.10375 2.20125C4.45625 2.06375 4.985 1.90125 5.96 1.85625C6.8825 1.81375 7.24 1.80125 9.10375 1.8V1.8025ZM15.3387 3.4625C15.1812 3.4625 15.0251 3.49354 14.8795 3.55384C14.7339 3.61415 14.6017 3.70254 14.4902 3.81397C14.3788 3.9254 14.2904 4.05769 14.2301 4.20328C14.1698 4.34887 14.1388 4.50491 14.1388 4.6625C14.1388 4.82009 14.1698 4.97613 14.2301 5.12172C14.2904 5.26731 14.3788 5.3996 14.4902 5.51103C14.6017 5.62246 14.7339 5.71085 14.8795 5.77116C15.0251 5.83146 15.1812 5.8625 15.3387 5.8625C15.657 5.8625 15.9622 5.73607 16.1873 5.51103C16.4123 5.28598 16.5387 4.98076 16.5387 4.6625C16.5387 4.34424 16.4123 4.03902 16.1873 3.81397C15.9622 3.58893 15.657 3.4625 15.3387 3.4625ZM10.0013 4.865C9.32009 4.85437 8.64362 4.97936 8.01122 5.23268C7.37883 5.486 6.80314 5.86259 6.31769 6.34053C5.83223 6.81847 5.4467 7.38821 5.18355 8.01657C4.9204 8.64494 4.78488 9.31938 4.78488 10.0006C4.78488 10.6819 4.9204 11.3563 5.18355 11.9847C5.4467 12.613 5.83223 13.1828 6.31769 13.6607C6.80314 14.1387 7.37883 14.5153 8.01122 14.7686C8.64362 15.0219 9.32009 15.1469 10.0013 15.1363C11.3494 15.1152 12.6353 14.5649 13.5812 13.6041C14.5272 12.6432 15.0574 11.349 15.0574 10.0006C15.0574 8.65228 14.5272 7.35802 13.5812 6.39719C12.6353 5.43636 11.3494 4.88603 10.0013 4.865ZM10.0013 6.66625C10.8854 6.66625 11.7334 7.01748 12.3586 7.64268C12.9838 8.26788 13.335 9.11583 13.335 10C13.335 10.8842 12.9838 11.7321 12.3586 12.3573C11.7334 12.9825 10.8854 13.3337 10.0013 13.3337C9.11709 13.3337 8.26913 12.9825 7.64393 12.3573C7.01873 11.7321 6.6675 10.8842 6.6675 10C6.6675 9.11583 7.01873 8.26788 7.64393 7.64268C8.26913 7.01748 9.11709 6.66625 10.0013 6.66625Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_40_401">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <h1 class="text-24px ml-[12px]">weevcreative</h1>
+            </div>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.62417750870236!2d106.81301716324121!3d-6.394848611869086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9596e12f02b%3A0xfc57c124a570797f!2sJl.%20Pepaya%206%20No.55%2C%20RT.9%2FRW.3%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sid!2sid!4v1699770331047!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-r-lg"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center h-[60px]">
+      <h1
+        class="flex justify-center items-center h-full text-white text-[14px] md:text-[14px] font-Poppins mb-[40px]"
+      >
+        © 2023 WEEV Creative.
+      </h1>
+    </div>
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+
+    <script type="text/javascript" src="js/scroll.js"></script>
+  </body>
+</html>
